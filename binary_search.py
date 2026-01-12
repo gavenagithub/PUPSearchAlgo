@@ -5,7 +5,7 @@ def binary_search(array, target):
 
     while low <= high:
         mid = (low + high) // 2
-
+        print("mid=",mid)
         if array[mid] == target:
             return mid
         elif array[mid] < target:
@@ -35,11 +35,13 @@ def binary_search_wrapper(func, *args, **kwargs):
 #     return -1
 
 #def binary_search
-numbers = range(1, 1001)
+numbers = range(1, 101)
 test_data = ", ".join(map(str, numbers))
-target = 11
+target = -11
 arr = list(map(int, test_data.split(",")))
-execution_time = timeit.timeit("binary_search_wrapper(binary_search, arr, target)", globals=globals(), number=1)   
-result = binary_search_wrapper(binary_search, arr, target)
-print(f"Time taken to execute: {execution_time:.6f} seconds")
+print("array dateset=",arr)
+# execution_time = timeit.timeit("binary_search_wrapper(binary_search, arr, target)", globals=globals(), number=1)   
+# result = binary_search_wrapper(binary_search, arr, target)
+# print(f"Time taken to execute: {execution_time:.6f} seconds")
+result =binary_search( arr, target)
 print(f"Resoult found in index: {result} ")

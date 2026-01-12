@@ -13,9 +13,63 @@ Install dependency
 pip install Flask
 
 
-run the app
+## Running the App in a Virtual Environment (Recommended)
 
-execute the following in your command propmt or terminal
+### Step 1: Create a Virtual Environment
+
+Navigate to the project directory and create a virtual environment:
+
+```bash
+cd /path/to/PUPSearchAlgo
+python3 -m venv venv
+```
+
+### Step 2: Activate the Virtual Environment
+
+Activate the virtual environment:
+
+**On macOS/Linux:**
+```bash
+source venv/bin/activate
+```
+
+**On Windows:**
+```bash
+venv\Scripts\activate
+```
+
+### Step 3: Install Flask
+
+With the virtual environment activated, install Flask:
+
+```bash
+pip install Flask
+```
+
+### Step 4: Run the App
+
+Execute the following command to start the Flask application:
+
+```bash
+python app.py
+```
+
+### Step 5: Access the App
+
+Open your browser and go to: http://127.0.0.1:5000
+
+### Step 6: Deactivate Virtual Environment
+
+When you're done, you can deactivate the virtual environment:
+
+```bash
+deactivate
+```
+
+
+## Alternative: Run Without Virtual Environment
+
+execute the following in your command prompt or terminal
 
 python app.py
 
